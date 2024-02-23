@@ -1,6 +1,6 @@
-## CVRP Optimization Spring Boot Application
+# CVRP Optimization Spring Boot Application
 
-# Table of Contents
+## Table of Contents
 
     Introduction
     Features
@@ -12,7 +12,7 @@
     Contributing
     License
 
-# Introduction
+## Introduction
 
 The CVRP Optimization Spring Boot Application is a project designed to solve the Capacitated Vehicle Routing Problem (CVRP) using optimization techniques. The application is built with Spring Boot, making it easy to integrate and deploy. CVRP is a classic problem in vehicle routing where a fleet of vehicles is assigned to deliver goods to a set of customers while optimizing routes and satisfying capacity constraints.
 Features
@@ -22,14 +22,14 @@ Features
     RESTful API: Exposes endpoints for interacting with the CVRP solver and retrieving optimization results.
     Customizable: Configurable parameters for the CVRP solver to adapt to different scenarios.
 
-Prerequisites
+## Prerequisites
 
 Ensure you have the following software installed before running the application:
 
     Java Development Kit (JDK)
     Maven
 
-Getting Started
+## Getting Started
 
     Clone the repository:
 
@@ -37,13 +37,13 @@ Getting Started
 
 git clone https://github.com/your-username/cvrp-optimization-spring-boot.git
 
-Navigate to the project directory:
+## Navigate to the project directory:
 
 bash
 
 cd cvrp-optimization-spring-boot
 
-Build the project:
+## Build the project:
 
 bash
 
@@ -62,11 +62,11 @@ Adjust the application configuration in the application.properties file to suit 
 
 properties
 
-# Sample configuration properties
+## Sample configuration properties
 app.solver.algorithm=genetic
 app.solver.population-size=100
 app.solver.generations=500
-# Add more configuration properties...
+## Add more configuration properties...
 
 Usage
 
@@ -81,7 +81,7 @@ API Endpoints
 
 curl -X POST http://localhost:8080/optimize -H "Content-Type: application/json" -d '{"customers": [{"id": 1, "demand": 5, "location": {"lat": 35.123, "lon": -90.456}}, {"id": 2, "demand": 8, "location": {"lat": 35.456, "lon": -90.789}}], "vehicles": [{"capacity": 20, "startLocation": {"lat": 35.789, "lon": -90.123}}]}'
 
-Example Response:
+## Example Response:
 
 json
 
@@ -93,7 +93,7 @@ json
       "totalDistance": 48.12
     }
 
-Contributing
+## Contributing
 
 Feel free to contribute to the project by opening issues, providing feedback, or submitting pull requests. See CONTRIBUTING.md for more details on how to contribute.
 License
